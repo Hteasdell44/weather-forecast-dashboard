@@ -6,10 +6,91 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 
 <body>
+  
+  <header>
 
+    <h1>Weather Dashboard</h1>
+
+  </header>
+
+  <section id="container">
+
+     <aside id="left-side-display">
+      
+      <h2>Search For A City:</h2>
+  
+      <input id="textbox-input" placeholder="Ex: San Diego">
+
+      <button id="search-button">Search</button>
+  
+      <hr>
+  
+      <div id="previous-search-container"></div>
+  
+    </aside>
+  
+   <section id="right-side-display">
+  
+      <div id="current-weather-container">
+
+        <h3 id="current-city">Atlanta (3/21/23)</h3>
+        <p id="current-city-temp">Temp: 76.62˚F</p>
+        <p id="current-city-wind">Wind: 8.43 MPH</p>
+        <p id="current-city-humidity">Humidity: 44%</p>
+  
+      </div>
+  
+      <h4>5 Day Forecast:</h4>
+
+      <section id="forecast-card-container">
+
+        <div id="forecast-card-one">
+          <h5 id="forecast-day-one-date">3/22/23</h5>
+          <p id="forecast-day-one-temp">Temp: 76.62˚F</p>
+          <p id="forecast-day-one-wind">Wind: 8.43 MPH</p>
+          <p id="forecast-day-one-humidity">Humidity: 44%</p>
+        </div>
+
+        <div id="forecast-card-two">
+          <h5 id="forecast-day-two-date">3/23/23</h5>
+          <p id="forecast-day-two-temp">Temp: 76.62˚F</p>
+          <p id="forecast-day-two-wind">Wind: 8.43 MPH</p>
+          <p id="forecast-day-two-humidity">Humidity: 44%</p>
+        </div>
+
+        <div id="forecast-card-three">
+          <h5 id="forecast-day-three-date">3/24/23</h5>
+          <p id="forecast-day-three-temp">Temp: 76.62˚F</p>
+          <p id="forecast-day-three-wind">Wind: 8.43 MPH</p>
+          <p id="forecast-day-three-humidity">Humidity: 44%</p>
+        </div>
+
+        <div id="forecast-card-four">
+          <h5 id="forecast-day-four-date">3/25/23</h5>
+          <p id="forecast-day-four-temp">Temp: 76.62˚F</p>
+          <p id="forecast-day-four-wind">Wind: 8.43 MPH</p>
+          <p id="forecast-day-four-humidity">Humidity: 44%</p>
+        </div>
+
+        <div id="forecast-card-five">
+          <h5 id="forecast-day-five-date">3/26/23</h5>
+          <p id="forecast-day-five-temp">Temp: 76.62˚F</p>
+          <p id="forecast-day-five-wind">Wind: 8.43 MPH</p>
+          <p id="forecast-day-five-humidity">Humidity: 44%</p>
+        </div>
+
+      </section>
+  
+    </section>
+
+  </section>
+
+  
 </body>
 
 </html>
