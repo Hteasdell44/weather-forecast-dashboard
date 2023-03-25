@@ -362,10 +362,6 @@ function handleClear() {
         recentSearchCardArr = [];
     }
 }
-function setDefaultDisplayOnLoad() {
-
-
-}
 
 getCoordinates();
 displayRecentSearchOnLoad();
