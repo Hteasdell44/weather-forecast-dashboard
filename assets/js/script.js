@@ -76,7 +76,7 @@ function getCoordinates() {
         localStorage.setItem("Recent Searches", JSON.stringify(recentSearches));
     }
 
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + userInput + "&limit=5&appid=" + apiKey;
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + userInput + "&limit=5&appid=" + apiKey;
 
     fetch(apiUrl)
 
@@ -112,7 +112,7 @@ function getCoordinates() {
 
 function getForecast(lat, lon) {
 
-    var apiUrl = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + apiKey;
 
     fetch(apiUrl)
 
