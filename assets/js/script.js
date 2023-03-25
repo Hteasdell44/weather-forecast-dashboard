@@ -310,7 +310,7 @@ function displayRecentSearch(name) {
 
 function searchRecent(event) {
 
-    var apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + event.target.innerText + "&limit=5&appid=" + apiKey;
+    var apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + event.target.innerText + "&limit=5&appid=" + apiKey;
 
     fetch(apiUrl)
 
