@@ -137,11 +137,11 @@ function displayForecast(location) {
 
     var currentCityImgEl = document.createElement("img");
     currentCityImgEl.src = "https://openweathermap.org/img/wn/" + location.list[0].weather[0].icon + "@2x.png";
-    currentCityImgEl.style.marginTop = "-10vh";
     currentCityImgEl.style.marginBottom = "-5vh";
     var iconBackground = document.createElement("div");
-    iconBackground.style.height = "3vh";
-    iconBackground.style.width = "5vw";
+    iconBackground.style.width = "25vw";
+    iconBackground.style.display = "block";
+    iconBackground.style.margin = "auto";
     iconBackground.style.backgroundColor = "red";
     currentCityImgEl.appendChild(iconBackground);
     currentCityName.appendChild(currentCityImgEl);
@@ -155,9 +155,10 @@ function displayForecast(location) {
 
     var firstDateImgEl = document.createElement("img");
     firstDateImgEl.src = "https://openweathermap.org/img/wn/" + location.list[1].weather[0].icon + "@2x.png";
-    firstDateImgEl.style.marginBottom = "-1vh";
-    firstDateImgEl.style.marginLeft = ".4vw";
-    firstDateImgEl.style.width = "2.5vw";
+    firstDateImgEl.classList.add("imgEl");
+    firstDateImgEl.style.width = "5vw";
+    firstDateImgEl.style.display = "block";
+    firstDateImgEl.style.margin = "auto";
     firstDateEl.appendChild(firstDateImgEl);
 
     var secondDate = dayjs().add(2, 'day').format('M/D/YY');
@@ -168,8 +169,10 @@ function displayForecast(location) {
 
     var secondDateImgEl = document.createElement("img");
     secondDateImgEl.src = "https://openweathermap.org/img/wn/" + location.list[2].weather[0].icon + "@2x.png";
-    secondDateImgEl.style.marginBottom = "-1vh";
-    secondDateImgEl.style.width = "2.5vw";
+    secondDateImgEl.classList.add("imgEl");
+    secondDateImgEl.style.width = "5vw";
+    secondDateImgEl.style.display = "block";
+    secondDateImgEl.style.margin = "auto";
     secondDateEl.appendChild(secondDateImgEl);
 
     var thirdDate = dayjs().add(3, 'day').format('M/D/YY');
@@ -180,8 +183,10 @@ function displayForecast(location) {
 
     var thirdDateImgEl = document.createElement("img");
     thirdDateImgEl.src = "https://openweathermap.org/img/wn/" + location.list[2].weather[0].icon + "@2x.png";
-    thirdDateImgEl.style.marginBottom = "-1vh";
-    thirdDateImgEl.style.width = "2.5vw";
+    thirdDateImgEl.classList.add("imgEl");
+    thirdDateImgEl.style.width = "5vw";
+    thirdDateImgEl.style.display = "block";
+    thirdDateImgEl.style.margin = "auto";
     thirdDateEl.appendChild(thirdDateImgEl);
 
     var fourthDate = dayjs().add(4, 'day').format('M/D/YY');
@@ -192,8 +197,10 @@ function displayForecast(location) {
 
     var fourthDateImgEl = document.createElement("img");
     fourthDateImgEl.src = "https://openweathermap.org/img/wn/" + location.list[2].weather[0].icon + "@2x.png";
-    fourthDateImgEl.style.marginBottom = "-1vh";
-    fourthDateImgEl.style.width = "2.5vw";
+    fourthDateImgEl.classList.add("imgEl");
+    fourthDateImgEl.style.width = "5vw";
+    fourthDateImgEl.style.display = "block";
+    fourthDateImgEl.style.margin = "auto";
     fourthDateEl.appendChild(fourthDateImgEl);
 
     var fifthDate = dayjs().add(5, 'day').format('M/D/YY');
@@ -204,8 +211,10 @@ function displayForecast(location) {
 
     var fifthDateImgEl = document.createElement("img");
     fifthDateImgEl.src = "https://openweathermap.org/img/wn/" + location.list[2].weather[0].icon + "@2x.png";
-    fifthDateImgEl.style.marginBottom = "-1vh";
-    fifthDateImgEl.style.width = "2.5vw";
+    fifthDateImgEl.classList.add("imgEl");
+    fifthDateImgEl.style.width = "5vw";
+    fifthDateImgEl.style.display = "block";
+    fifthDateImgEl.style.margin = "auto";
     fifthDateEl.appendChild(fifthDateImgEl);
 }
 
@@ -237,7 +246,7 @@ function displayRecentSearch(name) {
         }
 
         var recentSearchCardEl = document.createElement("div");
-        recentSearchCardEl.style.width = "20vw";
+        recentSearchCardEl.style.width = "70%";
         recentSearchCardEl.style.height = "5vh";
         recentSearchCardEl.style.backgroundColor = "orange";
         recentSearchCardEl.style.boxShadow = "3px 3px 8px black";
@@ -275,7 +284,8 @@ function displayRecentSearch(name) {
 
         // Next, we'll make a new card.
         var recentSearchCardEl = document.createElement("div");
-        recentSearchCardEl.style.width = "20vw";
+        recentSearchCardEl.classList.add("previous-search-button")
+        recentSearchCardEl.style.width = "70%";
         recentSearchCardEl.style.height = "5vh";
         recentSearchCardEl.style.backgroundColor = "orange";
         recentSearchCardEl.style.boxShadow = "3px 3px 8px black";
