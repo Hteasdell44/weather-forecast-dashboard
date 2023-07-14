@@ -10,9 +10,14 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100.60vw;
-    padding-top: 10px;
+    width: 29vw;
+    
+    padding-top: 3vh;
     z-index: 2;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
@@ -102,7 +107,8 @@ button:hover {
     position: absolute;
     left: 28.5vw;
     top: 0;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 72.1vw;
     z-index: 3;
     background-color: lightgrey;
@@ -157,44 +163,102 @@ h4 {
     box-shadow: 3px 3px 8px black;
 }
 
-#forecast-card-container div {
-
-    padding-left: 1vw;
+.forecast-card {
+    text-align: center;
+    border: 2px solid black;
+    width: 33%;
 }
 
-#forecast-card-one {
+@media screen and (max-width: 992px) {
 
-    width: 16vw;
-    height: 29.5vh;
-    border: 2px solid black;
-}
+    #container {
+        flex-direction: column !important;
+        height: fit-content;
+    }
+    
+    #forecast-card-container {
 
-#forecast-card-two {
+        flex-direction: column;
+        width: 80vw;
+        height: fit-content;
+        display: block;
+        margin: auto;
+    }
 
-    width: 16vw;
-    height: 29.5vh;
-    border: 2px solid black;
-}
+    .forecast-card {
 
-#forecast-card-three {
+        width: 100% !important;
+        text-align: center;
+        border: 2px solid black;
+    }
 
-    width: 16vw;
-    height: 29.5vh;
-    border: 2px solid black;
-}
+    aside {
 
-#forecast-card-four {
+        padding: 0%;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 3vh;
+    }
 
-    width: 16vw;
-    height: 29.5vh;
-    border: 2px solid black;
-}
+    hr {
+        width: 90%;
+    }
 
-#forecast-card-five {
+    input {
+        width: 85vw;
+        padding: 1vh;
+        font-size: x-large;
+    }
 
-    width: 16vw;
-    height: 29.5vh;
-    border: 2px solid black;
+    button {
+        width: 89vw;
+        display: block;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: large;
+    }
+
+    #previous-search-container {
+
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    #clear-search-button {
+        width: 64vw;
+        display: block;
+        margin-left: 13vw;
+        font-size: large;
+    }
+
+    #right-side-display {
+        position: relative;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 8vh;
+    }
+
+    #current-weather-container {
+
+        width: 80vw;
+        height: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 3vh;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .imgEl {
+
+        width: 25vw !important;
+    }
+
 }
 
 h5 {
