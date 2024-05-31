@@ -245,17 +245,18 @@ function displayRecentSearch(name) {
             recentSearchTitleEl.removeChild(recentSearchTitleEl.childNodes[1]);
         }
 
-        var recentSearchCardEl = document.createElement("div");
+        var recentSearchCardEl = document.createElement("button");
         recentSearchCardEl.style.width = "70%";
-        recentSearchCardEl.style.height = "5vh";
+        recentSearchCardEl.style.height = "fit-content";
         recentSearchCardEl.style.backgroundColor = "orange";
         recentSearchCardEl.style.boxShadow = "3px 3px 8px black";
         recentSearchCardEl.style.marginTop = "4vh";
         recentSearchCardEl.style.paddingTop = "1vh";
+        recentSearchCardEl.style.paddingBottom = "1vh";
         recentSearchCardEl.style.cursor = "pointer";
         recentSearchCardEl.textContent = name;
         recentSearchCardEl.style.color = "white";
-        recentSearchCardEl.style.fontSize = "24px";
+        recentSearchCardEl.style.fontSize = "x-large";
 
         // If there was no name value, don't finish making the card. 
         if (recentSearchCardEl.textContent == "") {

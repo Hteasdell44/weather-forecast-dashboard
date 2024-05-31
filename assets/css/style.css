@@ -30,20 +30,24 @@ header h1 {
     margin-top: 0;
 }
 
+#forecast-card-container .forecast-card p {
+    font-size: medium;
+}
+
 #container {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
     z-index: 1;
 }
 
- aside {
+aside {
 
-    margin-top: 7vh;
+    padding-top: 7vh;
     padding-left: 2vw;
     padding-right: 3vw;
     background-color: navy;
@@ -81,12 +85,13 @@ button:hover {
 
 #clear-search-button {
 
-    position: absolute;
-    top: 88vh;
-    left: 3.8vw;
     display: block;
-    width: 20vw;
-    height: 5vh;
+    width: 70%;
+    height: fit-content;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: auto;
+    font-size: x-large;
 }
 
 #clear-search-button:hover {
@@ -97,35 +102,38 @@ button:hover {
 #previous-search-container {
 
     width: 23.55vw;
-    height: 69vh;
+    height: fit-content;
+    padding-bottom: 3vh;
     background-color: white;
     margin-top: -2vh;
 }
 
+
 #right-side-display {
 
-    position: absolute;
-    left: 28.5vw;
-    top: 0;
     min-height: 100vh;
-    height: fit-content;
-    width: 72.1vw;
+    width: 100%;
+    padding-left: 5vw;;
+    margin: auto;
     z-index: 3;
     background-color: lightgrey;
+    align-content: center;
 }
 
 h3 {
     font-size: 28px;
 }
 
+#current-city {
+    margin-top: 0;
+}
+
 #current-weather-container {
 
     width: 60vw;
-    height: 30vh;
+    height: fit-content;
     border: 3px solid black;
     background-color: white;
-    margin-top: 15vh;
-    margin-left: 5vw;
     padding-left: 2vw;
     box-shadow: 3px 3px 8px black;
 }
@@ -143,31 +151,30 @@ h3 {
 #right-side-display p {
 
     font-size: 20px;
-    margin-top: 25px;
 }
 
 h4 {
 
-    margin-left: 5vw;
-    font-size: 28px;
+    font-size: xx-large;
 }
 
 #forecast-card-container {
-
-    background-color: white;
-    width: 62.55vw;
-    height: 30vh;
-    margin-left: 5vw;
+    width: 93.4%;
+    height: fit-content;
+    gap: 3vw;
     display: flex;
     flex-direction: row;
-    box-shadow: 3px 3px 8px black;
 }
 
 .forecast-card {
+    background-color: white;
     text-align: center;
     border: 2px solid black;
+    box-shadow: 3px 3px 8px black;
     width: 33%;
+
 }
+
 
 @media screen and (max-width: 992px) {
 
@@ -181,13 +188,13 @@ h4 {
         flex-direction: column;
         width: 80vw;
         height: fit-content;
-        display: block;
-        margin: auto;
+        margin: 0 auto;
+      
     }
 
     .forecast-card {
 
-        width: 100% !important;
+        width: 80vw !important;
         text-align: center;
         border: 2px solid black;
     }
@@ -197,7 +204,8 @@ h4 {
         padding: 0%;
         width: 100%;
         height: fit-content;
-        padding-bottom: 3vh;
+        padding-top: 8vh;
+        padding-bottom: 5vh;
     }
 
     hr {
@@ -227,10 +235,13 @@ h4 {
     }
 
     #clear-search-button {
-        width: 64vw;
+        width: 70%;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
         display: block;
-        margin-left: 13vw;
-        font-size: large;
+        font-size: x-large;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
     }
 
     #right-side-display {
@@ -239,6 +250,7 @@ h4 {
         width: 100%;
         text-align: center;
         padding-bottom: 8vh;
+        padding-left: 0;
     }
 
     #current-weather-container {
@@ -247,6 +259,7 @@ h4 {
         height: fit-content;
         text-align: center;
         margin: 0 auto;
+        padding-top: 3vh;
         padding-bottom: 3vh;
     }
 
@@ -260,6 +273,13 @@ h4 {
     }
 
 }
+
+@media screen and (max-width: 257px) {
+    aside {
+        padding-top: 12vh;
+    }
+
+}    
 
 h5 {
 
